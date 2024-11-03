@@ -38,7 +38,7 @@ TokenLiteral *generate_number(char *current, int *current_index){
     char *value = malloc(sizeof(char) * 8);
     int value_index = 0;
     while(isdigit(current[*current_index]) && current[*current_index] != '\0'){
-        if(!isdigit(current[*current_index])){
+        if(!isdigit(current)){
             break;
         }
         value[value_index] = current[*current_index];
